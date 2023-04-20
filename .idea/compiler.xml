@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring2023Project4" />
+        <module name="Project4Client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
