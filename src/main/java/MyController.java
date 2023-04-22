@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
@@ -17,19 +18,22 @@ import javafx.scene.layout.VBox;
 public class MyController {
     @FXML
     private TextField clientTextField;
-
     @FXML
-    private Button serverButton;
-
+    private Button serverButton, clientButton, clientSubmitButton;
     @FXML
-    private Button clientButton;
-
+    private VBox beginningRoot, clientRoot, serverRoot;
     @FXML
-    private Button clientSubmitButton;
-
+    private ListView<String> listItems, listItems2;
+    @FXML
+    private Server serverConnection;
+    private Client clientConnection;
 
     // this should launch the server
     public void serverLaunch(ActionEvent e) throws IOException {
+        // switch the scene to the server scene
+
+        // set up decor display
+
 
     }
 

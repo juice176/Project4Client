@@ -97,9 +97,7 @@ public class GuiServer extends Application{
                 System.exit(0);
             }
         });
-		
-		 
-		
+
 		primaryStage.setScene(startScene);
 		primaryStage.show();
 	}
@@ -113,8 +111,6 @@ public class GuiServer extends Application{
 		pane.setCenter(listItems);
 	
 		return new Scene(pane, 500, 400);
-		
-		
 	}
 	
 	public Scene createClientGui() {
