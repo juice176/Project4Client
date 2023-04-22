@@ -68,8 +68,7 @@ public class GuiServer extends Application{
 							Platform.runLater(()->{listItems2.getItems().add(data.toString());
 											});
 							});
-							
-											clientConnection.start();
+							clientConnection.start();
 		});
 		
 		this.buttonBox = new HBox(400, serverChoice, clientChoice);
@@ -103,7 +102,6 @@ public class GuiServer extends Application{
 		
 		primaryStage.setScene(startScene);
 		primaryStage.show();
-		
 	}
 	
 	public Scene createServerGui() {

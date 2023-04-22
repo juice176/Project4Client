@@ -16,10 +16,22 @@ import javafx.scene.layout.VBox;
 // the MyController is where all the methods for the Javafx elements go
 public class MyController {
     @FXML
-    private TextField serverTextField;
+    private TextField clientTextField;
+
+    @FXML
+    private Button serverButton;
+
+    @FXML
+    private Button clientButton;
 
 
+    // this should launch the server
     void serverLaunch(ActionEvent e) throws IOException {
+
+    }
+
+    // this should launch the client
+    void clientLaunch(ActionEvent e) throws IOException{
 
     }
 }

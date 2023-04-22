@@ -10,7 +10,7 @@
 
 
 <!--    <Button fx:id = "helloButton" text = "hello" onAction = "#helloMethod"/>-->
-    <TextField fx:id = "serverTextField" />
+    <TextField fx:id = "clientTextField" />
     <Button fx:id = "helloButton2" text = "hello2" />
     <Button fx:id = "helloButton3" text = "hello3" />
 
