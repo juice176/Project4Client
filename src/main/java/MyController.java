@@ -15,7 +15,7 @@ import javafx.scene.layout.VBox;
 
 
 // the MyController is where all the methods for the Javafx elements go
-public class MyController {
+public class MyController implements Initializable{
     @FXML
     private TextField clientTextField;
     @FXML
@@ -28,17 +28,26 @@ public class MyController {
     private Server serverConnection;
     private Client clientConnection;
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        // TODO Auto-generated method stub
+    }
+
     // this should launch the server
     public void serverLaunch(ActionEvent e) throws IOException {
         // switch the scene to the server scene
 
-        // set up decor display
+        // set up "Decorations"
 
-
+        // set up data displaying (listviews from client input)
     }
 
     // this should launch the client
     public void clientLaunch(ActionEvent e) throws IOException{
+        // switch the scene to the client scene
 
+        // set up client "decorations"
+
+        // set up data
     }
 }
