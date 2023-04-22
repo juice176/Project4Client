@@ -24,14 +24,17 @@ public class MyController {
     @FXML
     private Button clientButton;
 
+    @FXML
+    private Button clientSubmitButton;
+
 
     // this should launch the server
-    void serverLaunch(ActionEvent e) throws IOException {
+    public void serverLaunch(ActionEvent e) throws IOException {
 
     }
 
     // this should launch the client
-    void clientLaunch(ActionEvent e) throws IOException{
+    public void clientLaunch(ActionEvent e) throws IOException{
 
     }
 }
