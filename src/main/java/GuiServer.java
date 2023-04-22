@@ -50,13 +50,11 @@ public class GuiServer extends Application{
 		
 		this.serverChoice.setOnAction(e->{ primaryStage.setScene(sceneMap.get("server"));
 											primaryStage.setTitle("This is the Server");
-				serverConnection = new Server(data -> {
-					Platform.runLater(()->{
-						listItems.getItems().add(data.toString());
-					});
-
+			serverConnection = new Server(data -> {
+				Platform.runLater(()->{
+					listItems.getItems().add(data.toString());
 				});
-											
+			});
 		});
 		
 		
