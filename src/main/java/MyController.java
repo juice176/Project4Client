@@ -44,9 +44,6 @@ public class MyController implements Initializable{
 //        beginningRoot.getScene().setRoot(serverRoot);
 
         // set up server connection
-//        serverConnection = new Server(data -> {
-//            Platform.runLater(()->{ listItems.getItems().add(data.toString()); });
-//        });
 
         // set up "Decorations"
 
