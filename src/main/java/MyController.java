@@ -27,6 +27,7 @@ public class MyController implements Initializable{
     @FXML
     private Server serverConnection;
     private Client clientConnection;
+    @FXML
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -36,6 +37,10 @@ public class MyController implements Initializable{
     // this should launch the server
     public void serverLaunch(ActionEvent e) throws IOException {
         // switch the scene to the server scene
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("myfxml.fxml"));
+        Parent root2 = loader.load(); //load view into parent
+        root2.getStylesheets().add("style1.css");//set style
+        serverRoot.getScene().setRoot(root2);
 
         // set up "Decorations"
 
