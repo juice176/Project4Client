@@ -1,6 +1,8 @@
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -42,6 +44,11 @@ public class MyController implements Initializable{
         root2.getStylesheets().add("style1.css");//set style
         serverRoot.getScene().setRoot(root2);
 
+        // set up server connection
+        serverConnection = new Server(data -> {
+            Platform.runLater(()->{ listItems.getItems().add(data.toString()); });
+        });
+
         // set up "Decorations"
 
         // set up data displaying (listviews from client input)
@@ -52,6 +59,12 @@ public class MyController implements Initializable{
         // switch the scene to the client scene
 
         // set up client "decorations"
+
+        // set up client connection
+        clientConnection = new Client(data->{
+            Platform.runLater(()->{listItems2.getItems().add(data.toString());});
+        });
+        clientConnection.start();
 
         // set up data
     }

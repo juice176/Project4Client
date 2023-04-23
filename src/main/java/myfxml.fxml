@@ -11,17 +11,20 @@
 
     <!--The Elements Inside the Beginning Scene-->
     <BorderPane fx:id = "beginningRoot" >
-        <Button fx:id = "clientButton" text = "Client" onAction = "#clientLaunch"/>
-        <Button fx:id = "serverButton" text = "Server" onAction = "#serverLaunch"/>
+        <right><Button fx:id = "clientButton" text = "Client" onAction = "#clientLaunch"/></right>
+        <left><Button fx:id = "serverButton" text = "Server" onAction = "#serverLaunch"/></left>
     </BorderPane>
 
+    <!--The Elements Inside the Client Scene-->
     <BorderPane fx:id = "clientRoot" >
-        <TextField fx:id = "clientTextField" promptText = "Enter string to send..."/> <!-- for user input on client side -->
-        <Button fx:id = "clientSubmitButton" text = "Submit String" />
+       <top><TextField fx:id = "clientTextField" promptText = "Enter string to send..."/></top>
+       <bottom><Button fx:id = "clientSubmitButton" text = "Submit String" /></bottom>
     </BorderPane>
 
-    <BorderPane fx:id = "serverRoot" ></BorderPane>
-<!--    <Button fx:id = "helloButton3" text = "hello3" />-->
+    <!--The Elements Inside the Server Scene-->
+    <BorderPane fx:id = "serverRoot" >
+
+    </BorderPane>
 
 </VBox>
 
