@@ -9,18 +9,18 @@
       fx:id = "root">
     <!-- TODO Add Nodes -->
 
-    <TextField fx:id = "clientTextField" promptText = "Enter string to send..."/> <!-- for user input on client side -->
-    <Button fx:id = "clientSubmitButton" text = "Submit String" />
-
     <!--The Elements Inside the Beginning Scene-->
-    <VBox fx:id = "beginningRoot" >
+    <BorderPane fx:id = "beginningRoot" >
         <Button fx:id = "clientButton" text = "Client" onAction = "#clientLaunch"/>
         <Button fx:id = "serverButton" text = "Server" onAction = "#serverLaunch"/>
-    </VBox>
-    <VBox fx:id = "clientRoot" >
+    </BorderPane>
 
-    </VBox>
-    <VBox fx:id = "serverRoot" ></VBox>
+    <BorderPane fx:id = "clientRoot" >
+        <TextField fx:id = "clientTextField" promptText = "Enter string to send..."/> <!-- for user input on client side -->
+        <Button fx:id = "clientSubmitButton" text = "Submit String" />
+    </BorderPane>
+
+    <BorderPane fx:id = "serverRoot" ></BorderPane>
 <!--    <Button fx:id = "helloButton3" text = "hello3" />-->
 
 </VBox>

@@ -21,7 +21,7 @@ public class MyController implements Initializable{
     @FXML
     private Button serverButton, clientButton, clientSubmitButton;
     @FXML
-    private VBox beginningRoot, clientRoot, serverRoot;
+    private BorderPane beginningRoot, clientRoot, serverRoot;
     @FXML
     private ListView<String> listItems, listItems2;
     @FXML
