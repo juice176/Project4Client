@@ -39,8 +39,9 @@ public class MyController implements Initializable{
 
     // this should launch the server
     public void serverLaunch(ActionEvent e) throws IOException {
+        System.out.println("serverLaunch");
         // switch the scene to the server scene
-        beginningRoot.getScene().setRoot(serverRoot);
+//        beginningRoot.getScene().setRoot(serverRoot);
 
         // set up server connection
 //        serverConnection = new Server(data -> {
@@ -54,6 +55,7 @@ public class MyController implements Initializable{
 
     // this should launch the client
     public void clientLaunch(ActionEvent e) throws IOException{
+        System.out.println("clientLaunch");
         // switch the scene to the client scene
 
         // set up client "decorations"
