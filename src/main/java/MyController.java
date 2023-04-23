@@ -28,8 +28,10 @@ public class MyController implements Initializable{
     private ListView<String> listItems, listItems2;
     @FXML
     private Server serverConnection;
+    @FXML
     private Client clientConnection;
     @FXML
+    private BorderPane root2;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -45,9 +47,9 @@ public class MyController implements Initializable{
         serverRoot.getScene().setRoot(root2);
 
         // set up server connection
-        serverConnection = new Server(data -> {
-            Platform.runLater(()->{ listItems.getItems().add(data.toString()); });
-        });
+//        serverConnection = new Server(data -> {
+//            Platform.runLater(()->{ listItems.getItems().add(data.toString()); });
+//        });
 
         // set up "Decorations"
 
@@ -61,10 +63,10 @@ public class MyController implements Initializable{
         // set up client "decorations"
 
         // set up client connection
-        clientConnection = new Client(data->{
-            Platform.runLater(()->{listItems2.getItems().add(data.toString());});
-        });
-        clientConnection.start();
+//        clientConnection = new Client(data->{
+//            Platform.runLater(()->{listItems2.getItems().add(data.toString());});
+//        });
+//        clientConnection.start();
 
         // set up data
     }
